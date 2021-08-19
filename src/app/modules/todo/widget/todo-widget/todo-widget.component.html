@@ -1,8 +1,9 @@
-<h1>Todo Widget</h1>
-
+<body bgcolor ="#ffc0cb" ><p><font size="6" color="black" face="fantasy">Напоминания.</font></p>
+<p><font size="3" color="#8a2be2" face="cursive">Чтобы созданить напоминание, его нужно вписать и нажать кнопку "Создать".</font></p>
 <app-todo-create-form-ui (create)="onCreate($event)"></app-todo-create-form-ui>
 <app-todo-list-ui [todoList]="todoList$ | async"
                   (delete)="onDelete($event)"
                   (toggle)="onToggle($event)"
                   (edit)="onEdit($event)"
 ></app-todo-list-ui>
+</body>
